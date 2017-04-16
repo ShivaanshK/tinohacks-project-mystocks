@@ -1,0 +1,76 @@
+<! DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="Index.css">
+<script type="text/javascript" src="canvasjs.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+
+<font size = "5" color = "black">
+<ul>
+ <li><a href="Tinohacks.html">Home</a></li>
+  <li><a href="articles.html">Articles</a></li>
+  <li><a href="videotutorial.html">Video Tutorials</a></li>
+  <li><a href="Index.html">Submit an Article</a></li>
+  <li><a href="calculator.html">Market Calculator</a></li>
+</ul>
+<body style="border:;background-color:gray;">
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<i><p><font size = "5" color = "black"><h2>"The time to repair the roof is when the sun is shining." -JFK</h2></i></p>
+<img src="http://www.hdwallpaperg.com/wp-content/uploads/2014/10/stock-market-crashes.jpg" alt="stocks" style="width:100px;height:100px;">
+<img src="http://3.bp.blogspot.com/-s28vaiO2B-Y/UU3dVyxcuzI/AAAAAAAAj4M/pZrjphtrw64/s1600/what+is+a+stock+market.jpg" alt="stocks" style="width:100px;height:100px;">
+<img src="https://intuitturbotax.files.wordpress.com/2010/10/stock-market.jpg" alt="stocks" style="width:100px;height:100px;">
+<img src="http://faganasset.com/wp-content/uploads/2015/04/stock-market-3.jpg" alt="stocks" style="width:100px;height:100px;">
+<img src="http://howtotradethemarkets.net/wp-content/uploads/2014/09/stock-market-chart1.jpg" alt="stocks" style="width:100px;height:100px;">
+<img src="http://2tradersclub.com/wp-content/uploads/2013/06/stock-market-zoom.jpg" alt="stocks" style="width:100px;height:100px;">
+<img src="https://tse4.mm.bing.net/th?id=OIP._c3IMcD72wMHGMUIax5b6AEsDh&pid=15.1&P=0&w=219&h=165" alt="stocks" style="width:100px;height:100px;">
+<img src="http://firststepfinance.net/wp-content/uploads/2015/05/depositphotos_5969439-Stock-market-trend-under-magnifier-glass.jpg" alt="stocks" style="width:100px;height:100px;">
+<img src="http://cdn.images.express.co.uk/img/dynamic/22/590x/stock-market-643119.jpg" alt="stocks" style="width:100px;height:100px;">
+<center><b><font size = "20px" color = "black"><h3>MyStocks</h3></b></center> 
+<p><h4 style="border:;background-color:grey;"><font size = "5px" color = "black"><center> MyStocks, is an investing guide to kick start your financial career. It will keep you up to date with news and tips. If you are already knowledgeable, then write us articles to put on our website in the submit an article tab. Thank You, and enjoy your experience at MyStocks, while opening your doors to greatness. </center></h4></p>
+<p><center><i><u><mark> Tip of the week </mark></i></u></center></p>
+<p><h4 style="border:;background-color:grey;"><center>Stay away from speculation, technology, and commodities.</center></p>
+<p> Speculation is defined as any investment that you hope to gain out of, but risks a lot, such as penny stocks. Do not invest in technology either, since it is very risky. However, If the company gives up to five percent dividend, such as Apple, you could invest in it. Finally, commodities are things such as gold, silver, and oil, which depend on scarcity, and sometimes luck, which makes them very much like a speculation.</p></h4> 
+<script type="text/javascript">
+
+  
+ 
+
+                            function addData(value) {
+                                //chart.options.title.text = "New DataPoint Added at the end";
+                                chart.options.data[0].dataPoints.push({
+                                    y: parseInt(value)
+                                });
+                                chart.render();
+                                console.log(value + " was added");
+                            }
+
+                            function resetChart() {
+
+                                chart = new CanvasJS.Chart("chartContainer", {
+                                    title: {
+                                        text: " Dow Jones"
+                                    },
+                                    data: [{
+                                        type: "spline",
+                                        dataPoints: [{
+                                            y: 0
+                                        }]
+                                    }]
+                                });
+                                chart.render();
+                            }
+
+                            window.onload = function() {
+                                resetChart();
+								doStuff();
+                            }
+
+                            function doStuff() {
+                               addData(20453.25);
+			                }
+                            </script> 
+       <div id="chartContainer" style="width:100%; height:280px"></div> </font></font></font>
+   </div></font>
+ </body>
+</html>
